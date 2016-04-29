@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">EatApp</string>
+
+    <string name="tv_name">用户名：</string>
+    <string name="tv_password">密码：</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_regiest">注册</string>
+    <string name="tip_name">请输入手机号或绑定邮箱号</string>
+
+    <string name="btn_sendCode">发送验证码</string>
+    <string name="checkTel_error">该手机号已被注册</string>
+    <string name="btn_checkPass">注册</string>
+
+    <string name="tip_sendOk">已经向您手机发送验证码，请输入该验证码</string>
+
+    <!-- 收藏店铺 -->
+    <string name="collect_null">您还没有收藏过店铺</string>
+    <!-- 更改定位 -->
+    <string name="changeLocal_tip">请输入地址</string>
+    <string name="changeLocal_localText">当前地址</string>
+    <string name="changeLocal_changeTetx">重新定位</string>
+    <string name="changeLocal_addressText">收货地址</string>
+    <string name="address_null">您还没有添加收货地址</string>
+
+    <!-- 主页列表 -->
+    <string name="shop_null">附近没有外卖商家</string>
+    <string name="search_null">抱歉，没有相关搜索结果</string>
+    <string name="btn_search">搜索</string>
+    <string name="et_search">请输入店家或菜品名称</string>
+
+    <!-- 红包页面 -->
+    <string name="luckyBug_title">我的红包</string>
+    <string name="luckyBug_null">没有查询到红包</string>
+    <string name="luckyBug_search"><u>查看历史红包</u></string>
+
+    <!-- 店铺首页 -->
+    <string name="tab_1">菜品</string>
+    <string name="tab_2">评价</string>
+    <string name="tab_3">店家</string>
+
+    <!-- 购物车 -->
+    <string name="cart_main">购物车</string>
+    <string name="cart_buy">立即下单</string>
+
+    <!-- 点评 -->
+    <string name="comment_good">好棒</string>
+    <string name="comment_normal">一般般啦</string>
+    <string name="comment_bad">呵呵</string>
+    <string name="comment_tip">说点什么吧...</string>
+</resources>

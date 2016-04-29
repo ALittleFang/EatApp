@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountPage.AddressActivity">
+
+    <include
+        android:id="@+id/restaurant_head"
+        layout="@layout/common_above_title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <ListView
+            android:id="@+id/lv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:transcriptMode="alwaysScroll">
+        </ListView>
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/tv_address_null"
+            android:text="@string/address_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="添加收货地址"
+            android:id="@+id/btn_Address_add" />
+    </LinearLayout>
+</RelativeLayout>

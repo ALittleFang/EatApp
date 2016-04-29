@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/linen"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/restaurant_head"
+        layout="@layout/common_above_title" />
+    <LinearLayout
+        android:id="@+id/lay_top"
+        android:background="#fff"
+        android:layout_below="@+id/restaurant_head"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/img_comment_menu" />
+
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/comment_tip"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/et_comment_menu" />
+    </LinearLayout>
+    <GridView
+        android:background="@color/white"
+        android:layout_below="@+id/lay_top"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:horizontalSpacing="@dimen/space_size"
+        android:verticalSpacing="@dimen/space_size" />
+    <LinearLayout
+        android:id="@+id/layout_commentMenu_happy"
+        android:background="@color/white"
+        android:layout_below="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/comment_happy"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="#cd853f"
+                android:id="@+id/tv_comment_happy"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="@string/comment_good"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_commentMenu_normal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/comment_normal"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="#d3d3d3"
+                android:id="@+id/tv_comment_normal"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="@string/comment_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_commentMenu_angry"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/comment_angry"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="#d3d3d3"
+                android:id="@+id/tv_comment_angry"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="@string/comment_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/slategrey"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/btn_menuComment_submit"
+            android:text="发表评价"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

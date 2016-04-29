@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/restaurant_head"
+        layout="@layout/common_above_title" />
+    <LinearLayout
+        android:id="@+id/layout_enterTel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="26dip"
+        android:paddingRight="26dip">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="手机号"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:maxLength="11"
+            android:ems="11"
+            android:inputType="phone"
+            android:gravity="center"
+            android:id="@+id/tv_tel" >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="验证码"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:ems="4"
+            android:inputType="phone"
+            android:id="@+id/tv_code" >
+            <requestFocus />
+        </EditText>
+        <Button
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_sendCode"
+            android:id="@+id/btn_getCode" />
+        <TextView
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#5eb319"
+            android:visibility="gone"
+            android:text="提示信息"
+            android:textSize="20dp"
+            android:id="@+id/tv_sendMess" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="26dip"
+        android:paddingRight="26dip">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:id="@+id/btn_checkRegiest" />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_enterPass"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="26dip"
+        android:paddingRight="26dip">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="密码"
+            android:textSize="20dp"
+            android:id="@+id/textView4" />
+        <EditText
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:id="@+id/tv_password" >
+            <requestFocus />
+        </EditText>
+        </LinearLayout>
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:id="@+id/btn_gotoRegiest" />
+    </LinearLayout>
+</LinearLayout>

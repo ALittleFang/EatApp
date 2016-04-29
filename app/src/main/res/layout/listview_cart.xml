@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/tv_menuName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_menuName"
+        android:id="@+id/tv_menuPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:layout_toLeftOf="@+id/tv_cartMenu_num"
+        android:id="@+id/img_cartMenu_minus"
+        android:background="@mipmap/minus"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:id="@+id/tv_cartMenu_num"
+        android:layout_toLeftOf="@+id/img_cartMenu_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/img_cartMenu_add"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/add"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+</RelativeLayout>
